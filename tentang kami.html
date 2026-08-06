@@ -3,26 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tentang Kami - Vanguard Web Works</title>
+  <title>Vanguard Web Works</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <style>
+    /* Specific overrides for subpages */
     .nav { mix-blend-mode: normal; background: var(--black); color: var(--white); padding: 12px 40px;}
-    .page-wrapper { padding-top: 130px; padding-bottom: 100px; min-height: 80vh; overflow: hidden; }
-    
-    /* Custom UI untuk Editorial About */
-    .editorial-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; margin-top: 60px; }
-    .editorial-img { width: 100%; border-radius: 24px; transform: rotate(-3deg); box-shadow: 20px 20px 0 var(--orange); transition: transform 0.4s ease; }
-    .editorial-img:hover { transform: rotate(0deg); }
-    .editorial-title { font-family: var(--font-display); font-size: 3rem; line-height: 1.1; margin-bottom: 24px; letter-spacing: 1px;}
-    
-    @media (max-width: 992px) {
-      .editorial-grid { grid-template-columns: 1fr; gap: 50px; text-align: center; }
-      .editorial-img { transform: rotate(0); box-shadow: 10px 10px 0 var(--orange); }
-      .editorial-text p { margin-left: auto; margin-right: auto; }
-    }
+    .page-wrapper { padding-top: 100px; min-height: 80vh; }
   </style>
 </head>
 <body>
@@ -35,36 +24,75 @@
     <button class="menu-btn">MENU +</button>
   </nav>
 
-  <div class="page-wrapper mesh-bg">
-      <div class="container">
-        <h2 class="section-title massive text-center">CERITA <br><span class="outline-text-dark" style="color:transparent;-webkit-text-stroke: 2px var(--black);">VANGUARD</span></h2>
-        
-        <div class="editorial-grid">
-          <div>
-            <img class="editorial-img" src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Tim Vanguard di Kantor">
-          </div>
-          <div class="editorial-text">
-            <h3 class="editorial-title">MENGUBAH UMKM MENUJU ERA DIGITAL</h3>
-            <p class="body-text" style="max-width: 100%;">Kami lahir dari keresahan melihat banyak UMKM kesulitan bersaing di ranah online karena terhalang oleh mahalnya biaya pembuatan website. Bagi kami, website yang bagus tidak harus menguras kas bisnis Anda.</p>
-            <p class="body-text" style="max-width: 100%;">Di Vanguard Web Works, kami memadukan desain yang *bold*, performa cepat, dan navigasi yang intuitif. Kami bukan sekadar vendor pembuat web, melainkan mitra strategis untuk mendigitalkan bisnis Anda agar siap bersaing dengan perusahaan besar.</p>
-            <a href="tim.html" class="btn btn-pill btn-dark mt-4">
-              <span class="btn-text">KENALAN DENGAN TIM KAMI</span>
+  <div class="page-wrapper light-bg">
+      <section class="about pt-0">
+        <div class="container grid-2">
+          <div class="about-content">
+            <h2 class="section-title">
+              JASA PEMBUATAN <span class="badge-inline"></span><br>
+              WEBSITE UNTUK<br>
+              <span class="outline-text-dark">UMKM & STARTUP</span>
+            </h2>
+            <p class="body-text">
+              Bisnis yang berkembang butuh kehadiran online yang kuat. Vanguard Web Works membantu UMKM dan startup memiliki website profesional, cepat, dan mudah dikelola tanpa harus mengeluarkan biaya besar. Kami percaya setiap usaha, sekecil apa pun, berhak punya website yang layak bersaing.
+            </p>
+            <p class="body-text">
+              Penasaran paket mana yang cocok untuk bisnismu? Konsultasikan gratis dengan tim kami!
+            </p>
+            <a href="kontak.html" class="btn btn-pill btn-dark mt-2">
+              <span class="btn-text">KONSULTASI GRATIS</span>
               <span class="btn-icon btn-icon-orange">→</span>
             </a>
           </div>
+          <div class="about-image">
+            <div class="octagon-mask">
+              <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Tim Vanguard Web Works">
+            </div>
+          </div>
         </div>
-      </div>
+      </section>
   </div>
 
-  <!-- FOOTER (Sama seperti file sebelumnya) -->
-  <footer class="footer dark-bg">
+  <!-- FOOTER -->
+  <footer class="footer mesh-bg">
     <div class="container relative">
-      <h1 class="footer-title text-center mt-5 mb-5">VANGUARD</h1>
-      <!-- Kode footer lainnya tetap sama -->
+      <h1 class="footer-title">VANGUARD</h1>
+      
+      <div class="footer-grid mt-4">
+        <div>
+          <div class="footer-brand">WEB WORKS<br>UNTUK UMKM<br>& STARTUP</div>
+        </div>
+        <div>
+          <ul class="footer-links">
+            <li><a href="paket layanan.html">PAKET LAYANAN</a></li>
+            <li><a href="tentang kami.html">TENTANG KAMI</a></li>
+            <li><a href="tim.html">TIM</a></li>
+          </ul>
+        </div>
+        <div>
+          <ul class="footer-links">
+            <li><a href="kontak.html">KONTAK</a></li>
+            <li><a href="#">HARGA & PAKET</a></li>
+            <li><a href="#">PORTFOLIO</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-social-label">Follow us</div>
+          <ul class="footer-links">
+            <li><a href="#">INSTAGRAM</a></li>
+            <li><a href="#">YOUTUBE</a></li>
+            <li><a href="#">LINKEDIN</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
   </footer>
 
-  <div class="chat-btn"><svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M20 2H4C2.9 2 2 2.9 2 4V22L6 18H20C21.1 18 22 17.1 22 16V4C22 2.9 21.1 2 20 2Z"/></svg></div>
+  <!-- Floating Chat Button -->
+  <div class="chat-btn">
+    <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M20 2H4C2.9 2 2 2.9 2 4V22L6 18H20C21.1 18 22 17.1 22 16V4C22 2.9 21.1 2 20 2Z"/></svg>
+  </div>
+
   <script src="script.js"></script>
 </body>
 </html>
