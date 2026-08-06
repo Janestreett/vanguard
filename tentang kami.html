@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tentang Kami - Vanguard Web Works</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .nav { mix-blend-mode: normal; background: var(--black); color: var(--white); padding: 12px 40px;}
+    .page-wrapper { padding-top: 130px; padding-bottom: 100px; min-height: 80vh; overflow: hidden; }
+    
+    /* Custom UI untuk Editorial About */
+    .editorial-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; margin-top: 60px; }
+    .editorial-img { width: 100%; border-radius: 24px; transform: rotate(-3deg); box-shadow: 20px 20px 0 var(--orange); transition: transform 0.4s ease; }
+    .editorial-img:hover { transform: rotate(0deg); }
+    .editorial-title { font-family: var(--font-display); font-size: 3rem; line-height: 1.1; margin-bottom: 24px; letter-spacing: 1px;}
+    
+    @media (max-width: 992px) {
+      .editorial-grid { grid-template-columns: 1fr; gap: 50px; text-align: center; }
+      .editorial-img { transform: rotate(0); box-shadow: 10px 10px 0 var(--orange); }
+      .editorial-text p { margin-left: auto; margin-right: auto; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="nav">
+    <div class="logo">
+      <a href="index.html" class="r-mark" style="text-decoration: none; color: inherit;">V</a>
+    </div>
+    <button class="menu-btn">MENU +</button>
+  </nav>
+
+  <div class="page-wrapper mesh-bg">
+      <div class="container">
+        <h2 class="section-title massive text-center">CERITA <br><span class="outline-text-dark" style="color:transparent;-webkit-text-stroke: 2px var(--black);">VANGUARD</span></h2>
+        
+        <div class="editorial-grid">
+          <div>
+            <img class="editorial-img" src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Tim Vanguard di Kantor">
+          </div>
+          <div class="editorial-text">
+            <h3 class="editorial-title">MENGUBAH UMKM MENUJU ERA DIGITAL</h3>
+            <p class="body-text" style="max-width: 100%;">Kami lahir dari keresahan melihat banyak UMKM kesulitan bersaing di ranah online karena terhalang oleh mahalnya biaya pembuatan website. Bagi kami, website yang bagus tidak harus menguras kas bisnis Anda.</p>
+            <p class="body-text" style="max-width: 100%;">Di Vanguard Web Works, kami memadukan desain yang *bold*, performa cepat, dan navigasi yang intuitif. Kami bukan sekadar vendor pembuat web, melainkan mitra strategis untuk mendigitalkan bisnis Anda agar siap bersaing dengan perusahaan besar.</p>
+            <a href="tim.html" class="btn btn-pill btn-dark mt-4">
+              <span class="btn-text">KENALAN DENGAN TIM KAMI</span>
+              <span class="btn-icon btn-icon-orange">→</span>
+            </a>
+          </div>
+        </div>
+      </div>
+  </div>
+
+  <!-- FOOTER (Sama seperti file sebelumnya) -->
+  <footer class="footer dark-bg">
+    <div class="container relative">
+      <h1 class="footer-title text-center mt-5 mb-5">VANGUARD</h1>
+      <!-- Kode footer lainnya tetap sama -->
+    </div>
+  </footer>
+
+  <div class="chat-btn"><svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M20 2H4C2.9 2 2 2.9 2 4V22L6 18H20C21.1 18 22 17.1 22 16V4C22 2.9 21.1 2 20 2Z"/></svg></div>
+  <script src="script.js"></script>
+</body>
+</html>

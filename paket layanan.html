@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paket Layanan - Vanguard Web Works</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .nav { mix-blend-mode: normal; background: var(--black); color: var(--white); padding: 12px 40px;}
+    .page-wrapper { padding-top: 120px; padding-bottom: 100px; min-height: 80vh; }
+    
+    /* Custom UI untuk Pricing */
+    .pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 50px; }
+    .pricing-card { background: #111; border: 1px solid #333; border-radius: 24px; padding: 40px; text-align: left; transition: transform 0.3s ease, border-color 0.3s ease; }
+    .pricing-card:hover { transform: translateY(-10px); border-color: var(--orange); }
+    .pricing-title { font-family: var(--font-display); font-size: 2.2rem; color: var(--white); margin-bottom: 10px; letter-spacing: 1px;}
+    .pricing-price { font-family: var(--font-display); font-size: 3.5rem; color: var(--orange); margin-bottom: 20px; line-height: 1; }
+    .pricing-price span { font-size: 1.2rem; font-family: var(--font-body); color: var(--grey-text); }
+    .pricing-features { list-style: none; margin-bottom: 40px; color: #CCC; font-size: 1.05rem; }
+    .pricing-features li { margin-bottom: 12px; display: flex; gap: 10px; }
+    .pricing-features li::before { content: "✔"; color: var(--orange); font-weight: bold; }
+    .pricing-card .btn-pill { width: 100%; justify-content: center; }
+  </style>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="nav">
+    <div class="logo">
+      <a href="index.html" class="r-mark" style="text-decoration: none; color: inherit;">V</a>
+    </div>
+    <button class="menu-btn">MENU +</button>
+  </nav>
+
+  <div class="page-wrapper dark-bg">
+      <div class="container text-center">
+        <h2 class="section-title massive">PILIH <span class="outline-text">PAKETMU</span></h2>
+        <p class="body-text mx-auto mt-2" style="color: var(--grey-text);">Harga transparan, tanpa biaya tersembunyi. Sesuaikan dengan skala bisnismu saat ini.</p>
+        
+        <div class="pricing-grid">
+          <!-- Card 1 -->
+          <div class="pricing-card">
+            <h3 class="pricing-title">LANDING PAGE</h3>
+            <div class="pricing-price">200K <span>/ web</span></div>
+            <ul class="pricing-features">
+              <li>1 Halaman Responsif</li>
+              <li>Desain Profesional</li>
+              <li>Copywriting Basic</li>
+              <li>Revisi 2x</li>
+            </ul>
+            <a href="kontak.html" class="btn btn-pill btn-orange">
+              <span class="btn-text">AMBIL PAKET</span>
+            </a>
+          </div>
+          
+          <!-- Card 2 -->
+          <div class="pricing-card" style="background: var(--white); border-color: var(--white);">
+            <h3 class="pricing-title" style="color: var(--black);">PROFIL UMKM</h3>
+            <div class="pricing-price" style="color: var(--black);">500K <span>/ web</span></div>
+            <ul class="pricing-features" style="color: #444;">
+              <li>Hingga 5 Halaman</li>
+              <li>Integrasi Sosial Media</li>
+              <li>Formulir Kontak Custom</li>
+              <li>Optimasi SEO Dasar</li>
+              <li>Revisi 3x</li>
+            </ul>
+            <a href="kontak.html" class="btn btn-pill btn-dark">
+              <span class="btn-text">AMBIL PAKET</span>
+            </a>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="pricing-card">
+            <h3 class="pricing-title">TOKO ONLINE</h3>
+            <div class="pricing-price">1.5M <span>/ web</span></div>
+            <ul class="pricing-features">
+              <li>Halaman Tak Terbatas</li>
+              <li>Fitur Keranjang Belanja</li>
+              <li>Integrasi Payment Gateway</li>
+              <li>Dashboard Admin</li>
+              <li>Dukungan Prioritas 1 Bulan</li>
+            </ul>
+            <a href="kontak.html" class="btn btn-pill btn-orange">
+              <span class="btn-text">AMBIL PAKET</span>
+            </a>
+          </div>
+        </div>
+      </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer mesh-bg">
+    <!-- (Gunakan kode footer yang sama seperti di file aslinya) -->
+    <div class="container relative">
+      <h1 class="footer-title">VANGUARD</h1>
+      <div class="footer-grid mt-4">
+        <div><div class="footer-brand">WEB WORKS<br>UNTUK UMKM<br>& STARTUP</div></div>
+        <div>
+          <ul class="footer-links">
+            <li><a href="paket layanan.html">PAKET LAYANAN</a></li>
+            <li><a href="tentang kami.html">TENTANG KAMI</a></li>
+            <li><a href="tim.html">TIM</a></li>
+          </ul>
+        </div>
+        <div>
+          <ul class="footer-links">
+            <li><a href="kontak.html">KONTAK</a></li>
+            <li><a href="#">HARGA & PAKET</a></li>
+            <li><a href="#">PORTFOLIO</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-social-label">Follow us</div>
+          <ul class="footer-links">
+            <li><a href="#">INSTAGRAM</a></li>
+            <li><a href="#">YOUTUBE</a></li>
+            <li><a href="#">LINKEDIN</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="chat-btn"><svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M20 2H4C2.9 2 2 2.9 2 4V22L6 18H20C21.1 18 22 17.1 22 16V4C22 2.9 21.1 2 20 2Z"/></svg></div>
+  <script src="script.js"></script>
+</body>
+</html>
