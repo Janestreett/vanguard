@@ -3,164 +3,209 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tim - Vanguard Web Works</title>
+  <title>Vanguard Web Works</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <style>
-    .nav { mix-blend-mode: normal; background: var(--black); color: var(--white); padding: 12px 40px;}
-    .page-wrapper { padding-top: 130px; padding-bottom: 100px; min-height: 80vh; }
-    
-    .team-grid { 
-      display: grid; 
-      grid-template-columns: 1fr 1fr; 
-      gap: 50px; 
-      margin-top: 60px; 
-      max-width: 900px; 
-      margin-left: auto;
-      margin-right: auto;
-    }
-    
-    .team-card { 
-      background: var(--white); 
-      border: 3px solid var(--black); 
-      border-radius: 24px; 
-      padding: 50px 30px; 
-      text-align: center; 
-      box-shadow: 15px 15px 0 var(--orange); 
-      transition: transform 0.3s ease, box-shadow 0.3s ease; 
-    }
-    
-    .team-card:hover { 
-      transform: translate(-5px, -5px); 
-      box-shadow: 20px 20px 0 var(--black); 
-    }
-    
-    .team-img { 
-      width: 160px; 
-      height: 160px; 
-      border-radius: 50%; 
-      object-fit: cover; 
-      margin: 0 auto 24px; 
-      border: 4px solid var(--black); 
-      filter: grayscale(100%); 
-      transition: filter 0.3s ease, transform 0.3s ease; 
-    }
-    
-    .team-card:hover .team-img { 
-      filter: grayscale(0%);
-      transform: scale(1.05);
-    }
-    
-    .team-name { 
-      font-family: var(--font-display); 
-      font-size: 2.5rem; 
-      line-height: 1.1; 
-      margin-bottom: 5px; 
-      letter-spacing: 1px;
-    }
-    
-    .team-role { 
-      font-family: var(--font-body); 
-      font-weight: 700; 
-      color: var(--orange); 
-      font-size: 1.1rem; 
-      margin-bottom: 30px; 
-      display: block; 
-    }
-    
-    .social-links { 
-      display: flex; 
-      gap: 10px; 
-      justify-content: center; 
-    }
-    
-    /* Perbaikan agar tombol pasti terlihat dan memiliki warna */
-    .btn-custom {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      padding: 12px 18px;
-      border-radius: 50px;
-      font-family: var(--font-body);
-      font-weight: 700;
-      font-size: 0.85rem;
-      text-decoration: none;
-      flex: 1;
-      transition: opacity 0.2s ease, transform 0.2s ease;
-    }
-    .btn-custom:hover {
-      opacity: 0.9;
-      transform: translateY(-2px);
-    }
-    .btn-dark-custom {
-      background: var(--black);
-      color: var(--white);
-    }
-    .btn-orange-custom {
-      background: var(--orange);
-      color: var(--black);
-    }
 
-    @media (max-width: 768px) {
-      .team-grid { grid-template-columns: 1fr; gap: 40px; }
-      .team-card { padding: 40px 20px; box-shadow: 10px 10px 0 var(--orange); }
-      .team-card:hover { box-shadow: 15px 15px 0 var(--black); }
-    }
-  </style>
 </head>
 <body>
 
   <!-- NAVIGATION -->
   <nav class="nav">
     <div class="logo">
-      <a href="index.html" class="r-mark" style="text-decoration: none; color: inherit;">V</a>
+      <span class="r-mark">V</span>
     </div>
     <button class="menu-btn">MENU +</button>
   </nav>
+  
 
-  <div class="page-wrapper mesh-bg">
-      <div class="container">
-        <h2 class="section-title massive text-center">DUO <span class="outline-text-dark" style="color:transparent;-webkit-text-stroke: 2px var(--black);">KREATIF</span></h2>
-        <p class="body-text text-center mx-auto mt-2">Dua kepala di balik layar Vanguard Web Works.</p>
-        
-        <div class="team-grid">
-          <!-- Member 1 -->
-          <div class="team-card">
-            <img class="team-img" src="akmal.jpg" alt="Foto Anggota 1">
-            <h3 class="team-name">Akmal Fahreza</h3>
-            <span class="team-role">CO-FOUNDER / DEVELOPER</span>
-            
-            <div class="social-links">
-              <a href="https://www.linkedin.com/in/akmal-fahreza/" target="_blank" class="btn-custom btn-dark-custom">LINKEDIN</a>
-              <a href="https://www.instagram.com/akmall2_1/" target="_blank" class="btn-custom btn-orange-custom">INSTAGRAM</a>
-            </div>
-          </div>
+  <!-- HERO SECTION -->
+  <section class="hero dark-bg">
+    <div class="container relative">
+      <!-- Spinning Badge -->
+      <div class="badge-spin">
+        <svg viewBox="0 0 100 100" width="120" height="120">
+          <circle cx="50" cy="50" r="45" fill="#E4F059" />
+          <path d="M 35 40 Q 40 30 45 40 M 65 40 Q 60 30 55 40 M 35 60 Q 50 80 65 60" stroke="#000" stroke-width="4" fill="none" stroke-linecap="round"/>
+          <text x="50" y="50" font-size="9" text-anchor="middle" dominant-baseline="central" fill="#000" style="font-family: 'Inter'; font-weight: bold; letter-spacing: 2px;">
+            <textPath href="#circlePath">VANGUARD WEB WORKS • </textPath>
+          </text>
+          <defs>
+            <path id="circlePath" d="M 50, 50 m -35, 0 a 35,35 0 1,1 70,0 a 35,35 0 1,1 -70,0" />
+          </defs>
+        </svg>
+      </div>
 
-          <!-- Member 2 -->
-          <div class="team-card">
-            <img class="team-img" src="peter parker.jpg" alt="Foto Anggota 2">
-            <h3 class="team-name">Peter Parker</h3>
-            <span class="team-role">CO-FOUNDER / DESIGNER</span>
-            
-            <div class="social-links">
-              <a href="https://www.linkedin.com/in/peter-parker/" target="_blank" class="btn-custom btn-dark-custom">LINKEDIN</a>
-              <a href="https://www.instagram.com/peterparker/" target="_blank" class="btn-custom btn-orange-custom">INSTAGRAM</a>
-            </div>
-          </div>
+      <h1 class="hero-title">
+    MITRA DIGITAL<br>
+    TERPERCAYA<br>
+    UNTUK<br>
+    <span class="outline-text">UMKM</span>
+</h1>
+      
+      <a href="#" class="btn btn-pill btn-orange mt-4">
+        <span class="btn-text">LIHAT PAKET</span>
+        <span class="btn-icon">→</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section class="about light-bg">
+    <div class="container grid-2">
+      <div class="about-content">
+        <h2 class="section-title">
+          JASA PEMBUATAN <span class="badge-inline"></span><br>
+          WEBSITE UNTUK<br>
+          <span class="outline-text-dark">UMKM & STARTUP</span>
+        </h2>
+        <p class="body-text">
+          Bisnis yang berkembang butuh kehadiran online yang kuat. Vanguard Web Works membantu UMKM dan startup memiliki website profesional, cepat, dan mudah dikelola tanpa harus mengeluarkan biaya besar. Kami percaya setiap usaha, sekecil apa pun, berhak punya website yang layak bersaing.
+        </p>
+        <p class="body-text">
+          Penasaran paket mana yang cocok untuk bisnismu? Konsultasikan gratis dengan tim kami!
+        </p>
+        <a href="#" class="btn btn-pill btn-dark mt-2">
+          <span class="btn-text">KONSULTASI GRATIS</span>
+          <span class="btn-icon btn-icon-orange">→</span>
+        </a>
+      </div>
+      <div class="about-image">
+        <div class="octagon-mask">
+          <!-- Placeholder image matching the team group photo -->
+          <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Tim Vanguard Web Works">
         </div>
       </div>
-  </div>
+    </div>
+  </section>
+
+  <!-- TRAININGS SECTION -->
+  <section class="trainings light-bg">
+    <div class="container">
+      <div class="eyebrow-center">PAKET LAYANAN KAMI</div>
+      <div class="typographic-cluster">
+        <span class="word black">LANDING PAGE<sup>01</sup></span>
+        <span class="word grey">PROFIL UMKM<sup>02</sup></span>
+        <span class="word grey">TOKO ONLINE<sup>03</sup></span><br>
+        <span class="word grey">WEB STARTUP<sup>04</sup></span>
+        <span class="word grey">MAINTENANCE<sup>05</sup></span>
+      </div>
+      
+      <div class="image-grid mt-4">
+        <div class="img-card"><img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Paket Landing Page"></div>
+        <div class="img-card"><img src="https://images.unsplash.com/photo-1600132806370-bf17e65e942f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Paket Profil UMKM"></div>
+        <div class="img-card date-card">
+          <div class="date-badge">MULAI<br><span>200</span><br>RB</div>
+          <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Paket Toko Online">
+        </div>
+        <div class="img-card"><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Paket Web Startup"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM SECTION -->
+  <section class="team light-bg pt-0">
+    <div class="container grid-2 align-start mb-4">
+      <h2 class="section-title massive">BELAJAR DARI<br>TIM DIGITAL<br>PROFESIONAL</h2>
+      <div class="team-text">
+        <p class="body-text">
+          Kami memilih setiap developer dan desainer dengan penuh perhatian. Kami percaya pada keseimbangan antara desain yang menarik dan performa yang cepat, sehingga tim kami selalu mengikuti tren dan teknologi web terbaru. Fokus kami: website yang bukan cuma cantik, tapi juga membantu bisnismu bertumbuh.
+        </p>
+        <a href="#" class="btn btn-pill btn-dark">
+          <span class="btn-text">LIHAT TIM KAMI</span>
+          <span class="btn-icon btn-icon-orange">→</span>
+        </a>
+      </div>
+    </div>
+    
+    <div class="team-grid">
+      <div class="team-member" style="background-color: #00FF00;"><img src="tony.jpg" style="mix-blend-mode: multiply; filter: grayscale(100%);"></div>
+      <div class="team-member" style="background-color: #FF5A00;"><img src="peter.jpg" style="mix-blend-mode: multiply; filter: grayscale(100%);"></div>
+      <div class="team-member" style="background-color: #dfec24d5;"><img src="steve.jpg" style="mix-blend-mode: multiply; filter: grayscale(100%);"></div>
+      <div class="team-member" style="background-color: #000000;"><img src="bruce.jpg"></div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS SECTION -->
+  <section class="testimonials mesh-bg">
+    <div class="container text-center">
+      <h2 class="section-title massive mb-5">KLIEN-KLIEN INI SUDAH<br>MERASAKANNYA</h2>
+      
+      <div class="testimonial-grid">
+        <!-- Card 1 -->
+        <div class="testi-card">
+          <div class="testi-avatar"><img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&w=100&q=80" alt="Avatar"></div>
+          <p class="testi-text">Harga terjangkau tapi hasilnya jauh dari ekspektasi. Tim Vanguard Web Works sangat responsif dan paham banget kebutuhan UMKM seperti saya. 100% recommend!</p>
+          <div class="testi-author">SITI RAHAYU</div>
+        </div>
+        <!-- Card 2 -->
+        <div class="testi-card">
+          <div class="testi-avatar"><img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&w=100&q=80" alt="Avatar"></div>
+          <p class="testi-text">Saya pakai paket toko online untuk usaha rintisan saya. Prosesnya cepat, komunikasi lancar, dan hasil websitenya rapi banget. Dari mulai desain sampai fitur pembayaran semua ditangani dengan baik.</p>
+          <div class="testi-author">BAGAS PRATAMA<br><span class="role">FOUNDER STARTUP</span></div>
+        </div>
+        <!-- Card 3 -->
+        <div class="testi-card">
+          <div class="testi-avatar"><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&w=100&q=80" alt="Avatar"></div>
+          <p class="testi-text">Awalnya ragu karena budget terbatas, ternyata Vanguard Web Works punya paket mulai 200 ribuan yang tetap berkualitas. Sebulan setelah website jadi, penjualan online saya meningkat!</p>
+          <div class="testi-author">DIMAS ARYA</div>
+        </div>
+        <!-- Card 4 -->
+        <div class="testi-card">
+          <div class="testi-avatar"><img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?ixlib=rb-4.0.3&w=100&q=80" alt="Avatar"></div>
+          <p class="testi-text">Tempat yang pas buat UMKM yang mau naik kelas secara digital. Timnya terbuka untuk revisi dan selalu memastikan websitenya sesuai dengan yang kita inginkan.</p>
+          <div class="testi-author">RONA AMELIA</div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- FOOTER -->
-  <footer class="footer dark-bg">
+  <footer class="footer mesh-bg">
     <div class="container relative">
-      <h1 class="footer-title text-center mt-5 mb-5">VANGUARD</h1>
+      <div class="badge-spin badge-footer">
+        <!-- Reusing SVG Badge -->
+        <svg viewBox="0 0 100 100" width="120" height="120"><circle cx="50" cy="50" r="45" fill="#E4F059" /><path d="M 35 40 Q 40 30 45 40 M 65 40 Q 60 30 55 40 M 35 60 Q 50 80 65 60" stroke="#000" stroke-width="4" fill="none" stroke-linecap="round"/></svg>
+      </div>
+      <h1 class="footer-title">VANGUARD</h1>
+      
+      <div class="footer-grid mt-4">
+        <div>
+          <div class="footer-brand">WEB WORKS<br>UNTUK UMKM<br>& STARTUP</div>
+        </div>
+        <div>
+          <ul class="footer-links">
+            <li><a href="paket layanan.html">PAKET LAYANAN</a></li>
+            <li><a href="tentang kami.html">TENTANG KAMI</a></li>
+            <li><a href="tim.html">TIM</a></li>
+          </ul>
+        </div>
+        <div>
+          <ul class="footer-links">
+            <li><a href="kontak.html">KONTAK</a></li>
+            <li><a href="#">HARGA & PAKET</a></li>
+            <li><a href="https://janestreett.github.io/portofolio/">PORTFOLIO</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-social-label">Follow us</div>
+          <ul class="footer-links">
+            <li><a href="https://www.instagram.com/akmall2_1/">INSTAGRAM</a></li>
+            <li><a href="#">YOUTUBE</a></li>
+            <li><a href="https://www.linkedin.com/in/akmal-fahreza/">LINKEDIN</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
   </footer>
 
-  <div class="chat-btn"><svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M20 2H4C2.9 2 2 2.9 2 4V22L6 18H20C21.1 18 22 17.1 22 16V4C22 2.9 21.1 2 20 2Z"/></svg></div>
+  <!-- Floating Chat Button -->
+  <div class="chat-btn">
+    <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M20 2H4C2.9 2 2 2.9 2 4V22L6 18H20C21.1 18 22 17.1 22 16V4C22 2.9 21.1 2 20 2Z"/></svg>
+  </div>
+
   <script src="script.js"></script>
 </body>
 </html>
